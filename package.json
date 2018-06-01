@@ -1,0 +1,23 @@
+{
+  "name": "rye",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikepanz/ryetheatre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikepanz/ryetheatre/issues"
+  },
+  "homepage": "https://github.com/mikepanz/ryetheatre#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700|Zilla+Slab:700');
+* {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Zilla Slab', serif;
+    transition: ease-in-out, .3s;
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('/video/Snapshots/Green.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+h1 {
+    text-align: center;
+    font-family: 'Zilla Slab Highlight', cursive;
+    color: darkorange;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 5em;
+}
+h1:hover {
+    font-family: 'Zilla Slab', serif;
+}
+h1:hover span {
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+p {
+    display: inline-block;
+    background-color: chocolate;
+    font-size: 1.2em;
+}
+.main {
+    text-align: center;
+}
+i.fa-weixin {
+    cursor: pointer;
+    font-size: 3em;
+    color: chocolate;
+}
+div.i {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+}
+img {
+    vertical-align: text-top;
+    visibility: hidden;
+    width: 250px;
+}
+i:hover+img {
+    visibility: visible;
+}
